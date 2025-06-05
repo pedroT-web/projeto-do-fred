@@ -14,13 +14,10 @@
     padding-right: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
-
-
 }
 
 .pagina_1>.cabecalho nav>ul>a {
     border-radius: 10px;
-
 
     text-decoration: none;
     text-transform: none;
@@ -32,14 +29,11 @@
 
     font-family: 'Onest';
     font-size: 17px;
-
-
 }
 
 .pagina_1>.cabecalho nav {
     margin-top: 25px;
     margin-right: 40px;
-
 }
 
 .pagina_1>.cabecalho {
@@ -56,9 +50,8 @@
     height: 59px;
     width: 194.35px;
 
+    margin-top: 25px;
     margin-left: 200px;
-
- 
 }
 
 .informacoes_pag-1{
@@ -118,13 +111,10 @@
     border: 1px solid;
     border-radius: 7px;
 
-
-
     padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 20px;
     padding-left: 40px;
-
 }
 
 /* Segunda Página */
@@ -146,7 +136,7 @@
     height: 100%;
     width: 100%;
 
-    object-fit: cover;
+    object-fit: cover;;
 }
 
 .descricao_do_fred>.descricao>.titulo_descricao {
@@ -359,11 +349,12 @@
     height: 600px;
     width: 500px;
 
+    object-fit: scale-down;
 }
 
 /* Quinta Página */
 .pagina_videos {
-    height: 100vh;
+    height: 120vh;
     width: 80vw;
     padding: 0 10vw;
 
@@ -405,7 +396,7 @@
 }
 
 .pagina_videos .videos figure>figcaption {
-    margin-top: 280px;
+    margin-top: 320px;
 
     color: white;
 }
@@ -414,7 +405,7 @@
     display: grid;
 
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 70px;
 }
 
 .pagina_videos .videos .cards>figcaption>a {
@@ -423,13 +414,13 @@
     color: white;
 
     font-size: 20px;
-    margin-top: 100px;
-
 }
 
 .pagina_videos .videos .cards>figcaption>p {
     font-size: 18px;
     margin: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .pagina_videos .videos .cards>figcaption>h3 {
@@ -439,8 +430,8 @@
 }
 
 .pagina_videos>.videos .cards {
-    height: 400px;
-    width: 100%;
+    height: 500px;
+    width: 120%;
 }
 
 .pagina_videos>.videos .card-1 {
@@ -487,7 +478,7 @@
 }
 
 .pagina_videos>.botao_canal{
-    margin: 50px 470px 0 470px;
+    margin: 50px 400px 0 540px;
 
     text-decoration: none;
 
@@ -672,13 +663,11 @@
 
 /* Oitava Página */
 .pag_clientes{
-    height: 100%;
+    height: 140vh;
     width: 100vw;
 
     display: grid;
     grid-template-rows: 300px;
-
-    background-color: #E9763D;
 
     font-family: 'Onest';
 }
@@ -688,12 +677,22 @@
     width: 100vw;
     text-align: center;
     justify-content: center;
+
+    font-family: 'Onest'
+
+}
+
+.pag_clientes>.logos>h1{
+    font-size: 48px;
 }
 
 .pag_clientes>.logos>p{
-    width: 400px;
+    width: 550px;
 
-    margin-left: 600px;
+    margin-left: 520px;
+    font-size: 18px;
+
+    margin-bottom: 80px;
 }
 
 .pag_clientes>.logos>ul>li{
@@ -705,50 +704,64 @@
    padding-top: 50px;
 }
 
-
-/* .pag_clientes>.fundo_in_company{
-    height: 70vh;
+.pag_clientes>.fundo{
+    height: 80vh;
     width: 80vw;
 
-    align-items: center;
-} */
+    display: flex;
 
-.pag_clientes>.campo_in_company{
-    height: 70vh;
-    width: 80vw;
-    margin: 150px 10vw 0 10vw;
+    background-color: #2B2D3D;
 
-    background-color: aqua;
+    margin-top: 250px;
+    margin-left: 200px;
+
+    border-radius:24px;
 }
 
-.pag_clientes>.campo_in_company>p{
+.pag_clientes>.fundo>.campo_in_company{
+    height: 100%;
+    width: 50%;
+   
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.pag_clientes>.fundo>.campo_in_company>p{
     width: 600px;
     font-size: 18px;
+
+    color: #FFFFFF;
 }
 
-.pag_clientes>.campo_in_company>h1{
+.pag_clientes>.fundo>.campo_in_company>h1{
     font-size: 46px;
     color:#53CC6C;
 }
 
-.pag_clientes>.campo_in_company>ul>li{
+.pag_clientes>.fundo>.campo_in_company>ul>li{
     list-style: none;
 
     font-size: 18px;
+
+    color: #FFFFFF;
 }
 
-.pag_clientes>.campo_in_company>ul{
+.pag_clientes>.fundo>.campo_in_company>ul{
     margin-bottom: 50px;;
 }
 
-.pag_clientes>.campo_in_company>ul>li>i{
+.pag_clientes>.fundo>.campo_in_company>ul>li>i{
     color: #53CC6C;
     font-size: 24px;
 
     margin-right: 10px;
 }
 
-.pag_clientes>.campo_in_company>a{
+.pag_clientes>.fundo>.campo_in_company>a{
     text-decoration: none;
 
     color: #FFFFFF;
@@ -760,8 +773,15 @@
     border-radius: 7px;
 }
 
-.pag_clientes>.imagem_ultima_pag{
-    height: 50%;
+.pag_clientes>.fundo>.imagem_ultima_pag{
+    height: 100%;
     width: 50%;
-    background-image: url(../img/video_3.jpg);
+    background-image:
+    linear-gradient(to right, rgba(43, 45, 61, 0.9), rgba(43, 45, 61, 0.1)),
+     url(../img/video_3.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+
 }
