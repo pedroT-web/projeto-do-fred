@@ -208,7 +208,7 @@
     display: flex;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>section {
+.pagina_xeque_mate>.descricao_xeque_mate>div {
     width: 615px;
 
     font-family: 'Onest';
@@ -232,19 +232,19 @@
     object-position: top;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>h1 {
+.pagina_xeque_mate>.descricao_xeque_mate>div>h1 {
     color: #669997;
 
     font-size: 46px;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>p {
+.pagina_xeque_mate>.descricao_xeque_mate>div>p {
     width: 530px;
 
     font-size: 18px;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>ul {
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul {
     list-style: none;
 
     margin: 0;
@@ -255,18 +255,18 @@
     margin-bottom: 75px;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>ul>li>i {
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li>i {
     color: #689c5a;
 
     margin-right: 15px;
 
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>ul>li {
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li {
     margin-bottom: 15px;
 }
 
-.pagina_xeque_mate>.descricao_xeque_mate>.mentoria_xeque_mate>a {
+.pagina_xeque_mate>.descricao_xeque_mate>div>a {
     text-decoration: none;
 
     color: #669997;
