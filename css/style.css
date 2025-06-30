@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 @font-face {
@@ -6,56 +14,24 @@
 }
 
 /* Página Inicial */
-.pagina_1>header>nav>ul>.botao {
-    border: 1px solid;
-    border-radius: 7px;
-
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+.header-pagina {
+    min-height: 10vh;
+    margin: 0;
+    background-color: rgba(28, 52, 51, 1);
 }
 
-.pagina_1>.cabecalho nav>ul>a {
+.botao_in_company {
     border-radius: 10px;
-
-    text-decoration: none;
-    text-transform: none;
-
-    color: white;
-    background-color: none;
-
-    margin-right: 20px;
-
-    font-family: 'Onest';
-    font-size: 17px;
 }
 
-.pagina_1>.cabecalho nav {
-    margin-top: 25px;
-    margin-right: 40px;
+.botao_contato:hover,
+.botao_in_company:hover,
+.botao_pagina_inicial:hover {
+    scale: 1.05;
+    transition: 0.5s;
 }
 
-.pagina_1>.cabecalho {
-    background-color: rgb(28, 52, 51);
-
-    display: flex;
-
-    justify-content: space-between;
-    height: 100px;
-
-}
-
-.pagina_1>.cabecalho>img {
-    height: 59px;
-    width: 194.35px;
-
-    margin-top: 25px;
-    margin-left: 200px;
-}
-
-.informacoes_pag-1{
-    margin-top: 100px;
+.informacoes_pag-1 {
     margin-left: 200px;
 }
 
@@ -65,17 +41,18 @@
         url(../img/Imagen_pagina_1.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.pagina_1>.informacoes_pag-1>h2 {
-    margin-top: 10px;
+.pagina_1>.informacoes_pag-1>.itens_pagina_1>.titulo {
+    padding-top: 100px;
 
-    width: 700px;
+    max-width: 700px;
+
     word-break: break-word;
     /* Controla como as palavras vão ser quebradas */
+
     line-height: 70px;
     /* Define um espaço vertical entre as linhas */
 
@@ -85,11 +62,11 @@
     color: white;
 }
 
-.pagina_1>.informacoes_pag-1>h2>span {
+.pagina_1>.informacoes_pag-1>.itens_pagina_1>h2>span {
     color: #53CC6C;
 }
 
-.pagina_1>.informacoes_pag-1>p {
+.pagina_1>.informacoes_pag-1>.itens_pagina_1>p {
     width: 400px;
     word-break: break-word;
     line-height: 150%;
@@ -102,52 +79,47 @@
     color: white;
 }
 
-.pagina_1>.informacoes_pag-1>.contato {
+.pagina_1 .contato {
     text-decoration: none;
-    color: #53CC6C;
+    color: white;
 
-    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #53CC6C;
+}
 
-    border: 1px solid;
-    border-radius: 7px;
-
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
+.contato:hover {
+    transition: 0.5s;
+    background-color: #7ae28f75;
 }
 
 /* Segunda Página */
 .pagina_descricao {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+}
 
+.descricao_do_fred {
     background-color: #2B2D3D;
 
-    display: flex;
+    margin: 0;
 }
 
-.pagina_descricao>.imagem_pag_2 {
-    height: 100%;
-    width: 50%;
-}
 
-.pagina_descricao>.imagem_pag_2>img {
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;;
+.pagina_descricao>div>.imagem_pag_2 {
+    min-height: 100vh;
+    background-image: url(../img/imagen_pag2.jpg);
+    background-size: cover;
 }
 
 .descricao_do_fred>.descricao>.titulo_descricao {
     color: #53CC6C;
 
     font-family: 'Onest';
-
 }
 
 .descricao_do_fred>.descricao>p {
-    width: 400px;
+    width: 100%;
 
     font-size: 18px;
     font-family: 'Onest';
@@ -159,6 +131,7 @@
     list-style: none;
     margin: 0;
     /* Tira a margen padrão */
+
     padding: 0;
     /* Tira o espaçamento interno padrão */
 
@@ -175,613 +148,70 @@
     margin-right: 20px;
 }
 
-.descricao_do_fred>.descricao>a {
-    background-color: #53CC6C;
-
-    text-decoration: none;
-
-    color: white;
-
-    font-size: 20px;
-
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-
-    border-radius: 7px;
-}
-
 .descricao_do_fred>div {
     margin-left: 100px;
     margin-top: 150px;
 
-    font-family: 'Onest';
-}
-
-
-/* Terceira Página*/
-.pagina_xeque_mate {
-    height: 100vh;
     width: 100%;
 
-    display: flex;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div {
-    width: 615px;
-
-    font-family: 'Onest';
-
-    margin-top: 100px;
-    margin-left: 120px;
-}
-
-.pagina_xeque_mate>.imagem_pag-3 {
-    height: 100vh;
-    width: 50%;
-
-    margin-left: 50px;
-}
-
-.pagina_xeque_mate>.imagem_pag-3>img {
-    height: 100vh;
-    width: 100%;
-
-    object-fit: cover;
-    object-position: top;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>h1 {
-    color: #669997;
-
-    font-size: 46px;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>p {
-    width: 530px;
-
-    font-size: 18px;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>ul {
-    list-style: none;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 18px;
-
-    margin-bottom: 75px;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li>i {
-    color: #689c5a;
-
-    margin-right: 15px;
-
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li {
-    margin-bottom: 15px;
-}
-
-.pagina_xeque_mate>.descricao_xeque_mate>div>a {
-    text-decoration: none;
-
-    color: #669997;
-
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-
-    border: 1px solid #669997;
-    border-radius: 7px;
-
-}
-
-
-/* Quarta Pagina */
-.pagina_quick_wins {
-    height: 100vh;
-    width: 100%;
-
-    display: flex;
-
-    background-color: #FFF8F4;
 
     font-family: 'Onest';
 }
 
-.pagina_quick_wins>.descricao_quick_wins>div {
-    width: 500px;
-
-    margin-top: 100px;
-    margin-left: 100px;
-}
-
-.pagina_quick_wins>.descricao_quick_wins>div>h1 {
-    color: #E9763D;
-    font-size: 46px;
-}
-
-.pagina_quick_wins>.descricao_quick_wins>div>h2 {
-    font-size: 24px;
-}
-
-.pagina_quick_wins>.descricao_quick_wins>div>p {
-    margin-bottom: 100px;
-}
-
-.pagina_quick_wins>.descricao_quick_wins>div>a {
+.botao_pag_descricao {
     text-decoration: none;
-
-    color: #E9763D;
-
-    border: 1px solid #E9763D;
-    border-radius: 7px;
-
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-}
-
-.pagina_quick_wins>.imagem_pag-4>.fundo_imagem-4 {
-    background-color: #E9763D;
-
-    width: 600px;
-    height: 560px;
-
-    margin-top: 120px;
-    margin-left: 187px;
-
-    border-radius: 24px;
-
-    display: flex;
-
-    justify-content: center;
-}
-
-.pagina_quick_wins>.imagem_pag-4>.fundo_imagem-4>img {
-    margin-top: -40px; 
-    height: 600px;
-    width: 500px;
-
-    object-fit: scale-down;
-}
-
-/* Quinta Página */
-.pagina_videos {
-    height: 120vh;
-    width: 80vw;
-    padding: 0 10vw;
-
-
-
-    display: flex;
-    /* Flex deixa o display em linhas */
-    flex-direction: column;
-    /* transforma o display flex em colunas */
-
-    font-family: 'Onest';
-}
-
-.pagina_videos>.titulo {
-    display: flex;
-
-    margin-top: 50px;
-
-}
-
-.pagina_videos>.titulo>h1 {
-    font-size: 46px;
-}
-
-.pagina_videos>.titulo>p {
-    font-size: 18px;
-
-    margin-top: 45px;
-    margin-left: 30px;
-    width: 600px;
-
-}
-
-
-.pagina_videos .videos figure {
-    border-radius: 16px;
-
-    text-align: center;
-}
-
-.pagina_videos .videos figure>figcaption {
-    margin-top: 320px;
-
-    color: white;
-}
-
-.pagina_videos>.videos {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
-}
-
-.pagina_videos .videos .cards>figcaption>a {
-    text-decoration: none;
-
     color: white;
 
-    font-size: 20px;
-}
-
-.pagina_videos .videos .cards>figcaption>p {
-    font-size: 18px;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-.pagina_videos .videos .cards>figcaption>h3 {
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
-}
-
-.pagina_videos>.videos .cards {
-    height: 500px;
-    width: 120%;
-}
-
-.pagina_videos>.videos .card-1 {
-
-
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)),
-        url(../img/video_1.jpg);
-
-    background-size: cover;
-
-}
-
-.pagina_videos>.videos .card-2 {
-
-
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)),
-        url(../img/video_2.jpg);
-
-    background-size: cover;
-
-}
-
-.pagina_videos>.videos .card-3 {
-
-
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)),
-        url(../img/video_3.jpg);
-
-    background-size: cover;
-
-}
-
-.pagina_videos>.videos .card-4 {
-
-
-    background-image:
-        linear-gradient(to top, rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)),
-        url(../img/video_4.jpg);
-
-    background-size: cover;
-}
-
-.pagina_videos>.botao_canal{
-    margin: 50px 400px 0 540px;
-
-    text-decoration: none;
-
-    color:#53CC6C;
-
-    border: 1px solid;
-    border-radius: 7px;
-
-    padding: 20px 40px 20px 40px;
-}
-
-.pagina_videos>a>i{
-    margin-left: 5px;
-}
-
-
-
-/* Sexta Pagina */
-.blog_fred{
-    height: 120vh;
-    width: 90vw;
-    padding: 0 5vw;
-
-    background-color: #F5F2EC;
-
-    display: flex;
-    flex-direction: column;
-
-    font-family: 'Onest';
-}
-
-.blog_fred>.titulo_blog{
-    display: flex;
-
-    margin-top: 70px;
-
-    align-items: center;
-
-
-}
-
-.blog_fred>.titulo_blog>h1{
-    margin-right: 30px;
-
-    font-size: 46px;
-}
-
-.blog_fred>.titulo_blog>p{
-    width: 500px;
-}
-
-.blog_fred>.posts_blog{
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.blog_fred>.posts_blog>figure{
-    height: 400px;
-    width: 385px;
-
-    align-items: center;
-
-    background-color: #FFFFFF;
-
-    border-radius: 16px;
-}
-
-.blog_fred>.posts_blog>figure>img{
-    width: 385px;
-    height: 250px;
-
-    object-fit: cover;
-
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.blog_fred>.posts_blog>.cards_blog>figcaption>p{
-    font-size: 20px;
-
-    margin-left: 20px;
-}
-
-.blog_fred>.posts_blog>.cards_blog>figcaption>a{
-    text-decoration: none;
-
-    font-size: 18px;
-
-    color: #53CC6C;
-
-    margin-left: 20px;
-}
-
-.blog_fred>.posts_blog>.cards_blog>figcaption>a>i{
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.blog_fred>a{
-    text-decoration: none;
-    color: #53CC6C;
-
-    border: 1px solid;
-    border-radius: 7px;
-
-    margin: 70px 550px 0px 550px;
-    padding: 20px 40px 20px 40px;
-}
-
-.blog_fred>a>i{
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-
-/* Sétima Pagina */
-.apresentacao_fred{
-    height: 100vh;
-    width: 100vw;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    font-family: 'Onest';
-    
-}
-
-.apresentacao_fred>.imagem_pag-7{
-    height: 550px;
-    width: 500px;
-
-
-    background-image: url(../img/imagem_apresentacao.jpg);
-    background-size: cover;
-    object-position: top;
-
-    margin-top: 100px;
-    margin-left: 150px;
-    margin-bottom: 300px;
-
-    border-radius: 24px;
-}
-
-.apresentacao_fred>.apresentacao{
-    margin-top: 200px;
-}
-
-.apresentacao_fred>.apresentacao>h2{
-    font-size: 46px;
-}
-
-.apresentacao_fred>.apresentacao>p{
-    width: 550px;
-    margin-bottom: 50px;
-
-    color: #6B6A66;
-    font-size: 18px;
-}
-.apresentacao_fred>.apresentacao>h3{
-    width: 630px;
-    font-size: 18px;
-}
-
-.apresentacao_fred>.apresentacao>a{
-    text-decoration: none;
-    color:#53CC6C;
-
-    border: 1px solid;
-    border-radius: 7px;
-
-    margin-top: 50px;
-    padding: 20px 40px 20px 40px;
-}
-
-.apresentacao_fred>.apresentacao>a>i{
-    margin-left: 10px;
-    
-    font-size: 20px;
-}
-
-
-/* Oitava Página */
-.pag_clientes{
-    height: 140vh;
-    width: 100vw;
-
-    display: grid;
-    grid-template-rows: 300px;
-
-    font-family: 'Onest';
-}
-
-.pag_clientes>.logos{
-    height: 40vh;
-    width: 100vw;
-    text-align: center;
-    justify-content: center;
-
-    font-family: 'Onest'
-
-}
-
-.pag_clientes>.logos>h1{
-    font-size: 48px;
-}
-
-.pag_clientes>.logos>p{
-    width: 550px;
-
-    margin-left: 520px;
-    font-size: 18px;
-
-    margin-bottom: 80px;
-}
-
-.pag_clientes>.logos>ul>li{
-    list-style: none;
-}
-
-.pag_clientes>.logos>ul>.fileira-2{
-
-   padding-top: 50px;
-}
-
-.pag_clientes>.fundo{
-    height: 80vh;
-    width: 80vw;
-
-    display: flex;
-
-    background-color: #2B2D3D;
-
-    margin-top: 250px;
-    margin-left: 200px;
-
-    border-radius:24px;
-}
-
-.pag_clientes>.fundo>.campo_in_company{
-    height: 100%;
-    width: 50%;
-   
-    border-top-left-radius: 24px;
-    border-bottom-left-radius: 24px;
-
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-bottom: 100px;
-}
-
-.pag_clientes>.fundo>.campo_in_company>p{
-    width: 600px;
-    font-size: 18px;
-
-    color: #FFFFFF;
-}
-
-.pag_clientes>.fundo>.campo_in_company>h1{
-    font-size: 46px;
-    color:#53CC6C;
-}
-
-.pag_clientes>.fundo>.campo_in_company>ul>li{
-    list-style: none;
-
-    font-size: 18px;
-
-    color: #FFFFFF;
-}
-
-.pag_clientes>.fundo>.campo_in_company>ul{
-    margin-bottom: 50px;;
-}
-
-.pag_clientes>.fundo>.campo_in_company>ul>li>i{
-    color: #53CC6C;
-    font-size: 24px;
-
-    margin-right: 10px;
-}
-
-.pag_clientes>.fundo>.campo_in_company>a{
-    text-decoration: none;
-
-    color: #FFFFFF;
-
+    padding: 15px 20px;
+    border-radius: 10px;
     background-color: #53CC6C;
-
-    padding: 20px 40px 20px 40px;
-
-    border-radius: 7px;
 }
 
-.pag_clientes>.fundo>.imagem_ultima_pag{
-    height: 100%;
-    width: 50%;
-    background-image:
-    linear-gradient(to right, rgba(43, 45, 61, 0.9), rgba(43, 45, 61, 0.1)),
-     url(../img/video_3.jpg);
-    background-size: cover;
-    background-position: center;
+@media screen and (max-width: 768px) {
+    .header-pagina {
+        min-height: 15vh;
+    }
 
-    
+    .informacoes_pag-1 {
+        margin-left: 40px;
+    }
 
+    .pagina_1 {
+        background-position: right;
+    }
+
+    .descricao_do_fred>.descricao>ul {
+        margin-bottom: 10px;
+    }
+
+    .descricao_do_fred>div {
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .pagina_1 {
+        background-position: right;
+    }
+
+    .pagina_descricao>div>.imagem_pag_2 {
+        height: 100vh;
+    }
+
+    .descricao_do_fred>.descricao>ul {
+        margin-bottom: 30px;
+    }
+
+    .pagina_descricao{
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .descricao_xeque_mate {
+        margin-top: 100px;
+        margin-left: 200px;
+    }
 }
