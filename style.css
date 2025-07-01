@@ -92,6 +92,78 @@
     
 }
 
+.pagina_xeque_mate {
+    min-height: 100vh;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>.mentoria_xeque_mate {
+    font-family: 'Onest';
+}
+ 
+.pagina_xeque_mate>.imagem_pag-3 {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url(../img/imagem_pag3.jpg)
+}
+ 
+.pagina_xeque_mate>.imagem_pag-3>img {
+    min-height: 100vh;
+    width: 100%;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>h1 {
+    color: #669997;
+    font-size: 46px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>p {
+    width: 100%;
+ 
+    font-size: 18px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul {
+    list-style: none;
+ 
+    margin: 0;
+    padding: 0;
+ 
+    font-size: 18px;
+ 
+    margin-bottom: 75px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li>i {
+    color: #689c5a;
+ 
+    margin-right: 15px;
+ 
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li {
+    margin-bottom: 15px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>a {
+    text-decoration: none;
+ 
+    color: #669997;
+ 
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+ 
+    border: 1px solid #669997;
+    border-radius: 7px;
+ 
+}
+
 /* .pagina_1{
     background-color: linear-gradient(right, green, white);
 } */
