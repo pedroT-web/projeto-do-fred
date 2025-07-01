@@ -5,10 +5,6 @@
 html {
     overflow-x: hidden;
 }
-
-*{
-    margin: 0;
-}
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 @font-face {
@@ -168,6 +164,80 @@ html {
     padding: 15px 20px;
     border-radius: 10px;
     background-color: #53CC6C;
+}
+
+
+.pagina_xeque_mate {
+    /* height: 100vh;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: column; */
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div {
+    font-family: 'Onest';
+}
+ 
+.pagina_xeque_mate>.imagem_pag-3 {
+    height: 100vh;
+    width: 100%;
+}
+ 
+.pagina_xeque_mate>.imagem_pag-3>img {
+    height: 100vh;
+    width: 100%;
+
+    background-image: url();
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>h1 {
+    color: #669997;
+ 
+    font-size: 46px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>p {
+    width: 100%;
+ 
+    font-size: 18px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul {
+    list-style: none;
+ 
+    margin: 0;
+    padding: 0;
+ 
+    font-size: 18px;
+ 
+    margin-bottom: 75px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li>i {
+    color: #689c5a;
+ 
+    margin-right: 15px;
+ 
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>ul>li {
+    margin-bottom: 15px;
+}
+ 
+.pagina_xeque_mate>.descricao_xeque_mate>div>a {
+    text-decoration: none;
+ 
+    color: #669997;
+ 
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+ 
+    border: 1px solid #669997;
+    border-radius: 7px;
+ 
 }
 
 @media screen and (max-width: 768px) {
